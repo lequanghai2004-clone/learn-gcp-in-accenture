@@ -1,4 +1,4 @@
-name: Deploy to AWS
+name: Auth from Github Actions to AWS assuming an IAM role
 
 on:
   push:
