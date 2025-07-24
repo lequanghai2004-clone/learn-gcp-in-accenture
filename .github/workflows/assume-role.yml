@@ -19,7 +19,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
       with:
-        role-to-assume: arn:aws:iam::995692339962:role/Terraform1-Role
+        role-to-assume: "arn:aws:iam::995692339962:role/Terraform1-Role"
+        region: "us-east1"
 
     - name: Run something on AWS
       run: aws s3 ls
