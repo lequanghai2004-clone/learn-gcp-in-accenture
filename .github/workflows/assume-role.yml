@@ -20,5 +20,5 @@ jobs:
       with:
         role-to-assume: "arn:aws:iam::995692339962:role/Terraform1-Role"
         aws-region: "us-east-1"
-    - name: Test AWS OIDC Authentication
+    - name: Test AWS OIDC
       run: aws sts get-caller-identity
